@@ -1,12 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iframe Test</title>
-</head>
-<body>
-    <iframe src="https://webcast.movingimage.com/csr/#/webcast/6215e5bf7e9603576a25596b/en" width="1200px" height="800px" frameborder="0"></iframe>
+<style>
+#grad1 {
+ background-size: cover; 
+ background-image: linear-gradient(to left top,#E65758,#771D32);
+ background-repeat:repeat;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+}
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 15px;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 5px;
+	background: #ffc421;
+	border: 2px solid black;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+	transition: 500ms;
+}
+
+button:after {
+	content: '';
+	position: absolute;
+	transform: translateX(-55px) translateY(-40px);
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: transparent;
+	box-shadow: 0px 0px 50px transparent;
+	transition: 500ms;
+}
+
+button:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+button:hover:after {
+	background: white;
+	box-shadow: 0px 0px 20px #ffc421, 0px 0px 30px #ffc421, inset 0px 0px 10px #ffc421;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+	25%{transform: translateX(-25px) translateY(-35px);
+			width: 15px;
+			height: 15px;}
+	50% {transform: translateX(-55px) translateY(-30px);
+			width: 5px;
+			height: 5px;}
+	75% {transform: translateX(-85px) translateY(-35px);
+			width: 15px;
+			height: 15px;}
+}
+
+button:focus {
+	outline: none;
+}
+</style>
+<html>
+<body id="grad1">
+<center> <h1 id="heading"> iframe test for player Beta </h1> </center>
+<br>
+<br>
+<br>
+<center> <iframe width="400" height="300" allowfullscreen name="playerfr" src="https://e.video-cdn.net/watch?video-id=6DHcVYmL1viSq7JYidVxVc&player-id=48JZ4LQ-9755LoJ6s_Thgx&channel-id=97140"> </iframe>
+</center>
+<br>
+<br>
+<br>
+<br>
+<center>
+<button class="noselect">Play</button>
+<button class="noselect">Pause</button>
+<button class="noselect">Volume (+)</button>
+<button class="noselect">Volume (-)</button>
+<button class="noselect">Full screen</button>
+</center>
 </body>
 </html>
