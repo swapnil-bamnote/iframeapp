@@ -1,86 +1,25 @@
-<style>
-#grad1 {
- background-size: cover; 
- background-image: linear-gradient(to left top,#E65758,#771D32);
- background-repeat:repeat;
-}
-h1 {
-  font-size: 50px;
-  font-weight: 600;
-  color: #fdfdfe;
-  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
-    0px 0px 20px #b393d3;
-}
-.noselect {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-		-webkit-tap-highlight-color: transparent;
-}
-
-button {
-	width: 150px;
-	height: 50px;
-	cursor: pointer;
-	font-size: 15px;
-	font-family: 'Staatliches', cursive;
-	letter-spacing: 5px;
-	background: #ffc421;
-	border: 2px solid black;
-	box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
-	transition: 500ms;
-}
-
-button:after {
-	content: '';
-	position: absolute;
-	transform: translateX(-55px) translateY(-40px);
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	background: transparent;
-	box-shadow: 0px 0px 50px transparent;
-	transition: 500ms;
-}
-
-button:hover {
-	transform: translateY(-5px);
-	box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
-}
-
-button:hover:after {
-	background: white;
-	box-shadow: 0px 0px 20px #ffc421, 0px 0px 30px #ffc421, inset 0px 0px 10px #ffc421;
-	animation: spin 1s infinite linear;
-}
-
-@keyframes spin{
-	25%{transform: translateX(-25px) translateY(-35px);
-			width: 15px;
-			height: 15px;}
-	50% {transform: translateX(-55px) translateY(-30px);
-			width: 5px;
-			height: 5px;}
-	75% {transform: translateX(-85px) translateY(-35px);
-			width: 15px;
-			height: 15px;}
-}
-
-button:focus {
-	outline: none;
-}
-</style>
+<!DOCTYPE html>
 <html>
-<body id="grad1">
+<head>
+<link rel="stylesheet" href="styles.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32i" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+</head>
+<body>
 <center> <h1 id="heading"> iframe test for player Beta </h1> </center>
 <br>
-<br>
-<br>
-<br>
-<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+     <center> <h3 class="animate-charcter"> QA </h3></center>
+    </div>
+  </div>
+</div>
+<center> <iframe width="400" height="300" allowfullscreen name="playerfr" type="video/mp4" src="https://e-qa1.video-cdn.net/watch?video-id=4LLWKtLRBrkEvhggLuWprq&player-id=3fXb1_xZdMK5zW5jfoZzDw&channel-id=72968"> </iframe>
+</center>
 <br>
 <br>
 <center>
